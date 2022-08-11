@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script type="text/javascript">
+        function login(){
+            var user, pass;
+            user = document.getElementById("usuario").value;
+            pass = document.getElementById("contra").value;
+            if (user == "990368554" && pass == "Yesenia") {
+                window.location.href = "https://sadboy2oo4.github.io/next/";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="index.html" class="form-box animated fadeInUp">
+        <h1 class="form-title">Inicio de Sesión</h1>
+        <input type="text" placeholder="Username" autofocus required id="usuario">
+        <input type="password" placeholder="Password" required id="contra">
+        <a href="https://wa.me/+51919016679" class="link">Presiona aquí para conocer tu usuario</a>
+        <input type="button" name="Ingresar" value="Ingresar" onclick="login()">
+    </form>
+</body>
+
+</html>
